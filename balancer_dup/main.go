@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/Xerxes-cn/bazaar/proxy"
+	"github.com/Xerxes-cn/bazaar/balancer_dup/proxy"
 	"github.com/gorilla/mux"
 )
 

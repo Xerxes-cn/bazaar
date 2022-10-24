@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"sync"
 
-	"github.com/Xerxes-cn/bazaar/balancer"
+	"github.com/Xerxes-cn/bazaar/balancer_dup/balancer"
 )
 
 var (
@@ -23,6 +23,7 @@ type HTTPProxy struct {
 	hostMap map[string]*httputil.ReverseProxy
 	lb      balancer.Balancer
 	sync.RWMutex
+
 	alive map[string]bool
 }
 
